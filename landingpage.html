@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-width=1.0">
+    <title>Engenharia e Demolição | Limpeza de Terrenos</title>
+    
+    <!-- ========================================== -->
+    <!-- COLE AQUI A TAG DO GOOGLE ANALYTICS/ADS -->
+    <!-- ========================================== -->
+
+    <!-- ========================================== -->
+    <!-- COLE AQUI O PIXEL DA META (FACEBOOK/INSTAGRAM) -->
+    <!-- ========================================== -->
+
+    <style>
+        :root {
+            --primary-color: #ff6600; /* Laranja engenharia */
+            --dark-color: #222;
+            --light-color: #f4f4f4;
+            --whatsapp-color: #25d366;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+        }
+
+        /* Header / Hero Section */
+        header {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 4rem 1rem;
+            /* Placeholder para imagem de fundo escura de uma obra */
+            background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('placeholder-hero.jpg'); 
+            background-size: cover;
+            background-position: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: 0 auto 2rem auto;
+        }
+
+        /* Botões */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+            text-align: center;
+            margin: 0.5rem;
+        }
+
+        .btn-whatsapp {
+            background-color: var(--whatsapp-color);
+            color: white;
+        }
+
+        .btn-whatsapp:hover {
+            background-color: #1ebe57;
+        }
+
+        .btn-insta {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-insta:hover {
+            background-color: white;
+            color: var(--dark-color);
+        }
+
+        /* Seção de Portfólio / Demonstração */
+        .portfolio {
+            padding: 4rem 1rem;
+            text-align: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .portfolio h2 {
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .video-placeholder {
+            background-color: #ddd;
+            height: 250px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            font-weight: bold;
+            color: #777;
+            border: 2px dashed #aaa;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Demolição e Limpeza de Terrenos</h1>
+        <p>Preparamos o seu terreno para a próxima obra com segurança, maquinário especializado e descarte regularizado. Atendimento rápido e eficiente.</p>
+        
+        <!-- O link já está estruturado com o DDD 85 e a mensagem pré-programada -->
+        <!-- Substitua os 9s pelo número real do engenheiro -->
+        <a href="https://wa.me/5585981680463?text=Olá,%20vi%20o%20anúncio%20e%20gostaria%20de%20um%20orçamento%20para%20demolição" class="btn btn-whatsapp" target="_blank">
+            Solicitar Orçamento no WhatsApp
+        </a>
+    </header>
+
+    <section class="portfolio">
+        <h2>Nosso Trabalho na Prática</h2>
+        <div class="grid">
+            <!-- Substitua estas divs por tags <video> ou <img> quando tiver o material -->
+            <div class="video-placeholder">
+                [Vídeo/Imagem 1: Estrutura sendo demolida]
+            </div>
+            <div class="video-placeholder">
+                [Vídeo/Imagem 2: Remoção de entulho com trator]
+            </div>
+            <div class="video-placeholder">
+                [Vídeo/Imagem 3: Terreno limpo - Antes e Depois]
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <h2>Fale com o Engenheiro Responsável</h2>
+        <p style="margin-bottom: 1.5rem;">Tire suas dúvidas ou agende uma visita técnica.</p>
+        
+        <a href="https://wa.me/5585999999999?text=Olá,%20vi%20o%20site%20e%20quero%20falar%20com%20o%20engenheiro" class="btn btn-whatsapp" target="_blank">
+            Chamar no WhatsApp
+        </a>
+        <!-- Substitua seunome_engenharia pelo @ correto -->
+        <a href="https://instagram.com/seunome_engenharia" class="btn btn-insta" target="_blank">
+            Ver mais no Instagram
+        </a>
+    </footer>
+
+    <!-- Script opcional para rastrear os cliques no WhatsApp (Dispara o evento pro Pixel/Analytics) -->
+    <script>
+        const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
+        whatsappButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                console.log('Clique no WhatsApp registrado!');
+                // Aqui você vai inserir o código de conversão da Meta:
+                // fbq('track', 'Lead');
+                // E do Google Ads:
+                // gtag('event', 'conversion', {'send_to': 'AW-SEUID/SUACONVERSAO'});
+            });
+        });
+    </script>
+</body>
+</html>
