@@ -15,7 +15,7 @@
             "type": "editor-browser",
             "request": "launch",
             "name": "Open landingpage",
-            "url": "file:///c%3A/Users/gusta/Documents/GitHub/ricardoeng/landingpage.html"
+            "url": "file:///c%3A/Users/gusta/Documents/GitHub/ricardoeng/index.html"
         }
     ]
 }
