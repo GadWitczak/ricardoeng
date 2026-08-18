@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>Ricardo Engenheiro</title>
+    <title>Ideal Construções | Elétrica e Prevenção a Incêndio</title>
     <link rel="icon" href="./midia/logo.png?v=3" type="image/png">
     
     <!-- ========================================== -->
@@ -16,10 +16,11 @@
 
     <style>
         :root {
-            --primary-color: #ff6600; /* Laranja engenharia */
+            --primary-color: #ff6600; /* Laranja mantido para alerta/engenharia */
             --dark-color: #222;
             --light-color: #f4f4f4;
             --whatsapp-color: #25d366;
+            --card-bg: #ffffff;
         }
 
         * {
@@ -36,13 +37,11 @@
         }
 
         /* Header / Hero Section */
-       /* Header / Hero Section */
         header {
             background-color: var(--dark-color);
             color: white;
             text-align: center;
             padding: 4rem 1rem;
-            /* COLOQUE A BARRA E TIRE O NOME DO REPOSITÓRIO */
             background-image: linear-gradient(rgba(0, 50, 100, 0.7), rgba(0, 0, 0, 0.8)), url('midia/background.jpg'); 
             background-size: cover;
             background-position: center;
@@ -50,14 +49,21 @@
 
         header h1 {
             font-size: 2.5rem;
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
             color: var(--primary-color);
         }
 
+        header h2 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            margin-bottom: 1.5rem;
+        }
+
         header p {
-            font-size: 1.2rem;
-            max-width: 600px;
+            font-size: 1.1rem;
+            max-width: 700px;
             margin: 0 auto 2rem auto;
+            color: #ccc;
         }
 
         /* Botões */
@@ -93,17 +99,18 @@
             color: var(--dark-color);
         }
 
-        /* Seção de Portfólio / Demonstração */
+        /* Seção de Portfólio / Serviços */
         .portfolio {
             padding: 4rem 1rem;
             text-align: center;
-            max-width: 1000px;
+            max-width: 1100px;
             margin: 0 auto;
         }
 
         .portfolio h2 {
             margin-bottom: 2rem;
             font-size: 2rem;
+            color: var(--dark-color);
         }
 
         .grid {
@@ -112,16 +119,47 @@
             gap: 1.5rem;
         }
 
-        .video-placeholder {
-            background-color: #ddd;
-            height: 250px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        /* Novo estilo para os cartões de serviço baseados nos PDFs */
+        .service-card {
+            background-color: var(--card-bg);
+            padding: 2rem;
             border-radius: 8px;
-            font-weight: bold;
-            color: #777;
-            border: 2px dashed #aaa;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: left;
+            border-bottom: 4px solid var(--primary-color);
+        }
+
+        .service-card h3 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .service-card ul {
+            list-style-type: none;
+        }
+
+        .service-card ul li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .service-card ul li::before {
+            content: "⚡";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 0.9rem;
+        }
+
+        /* Configuração da Logo */
+        .logo-site {
+            max-width: 150px; 
+            height: auto;
+            margin-bottom: 1.5rem; 
+            border-radius: 15%; 
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
         }
 
         /* Footer */
@@ -129,74 +167,98 @@
             background-color: var(--dark-color);
             color: white;
             text-align: center;
-            padding: 2rem 1rem;
+            padding: 3rem 1rem;
             margin-top: 2rem;
         }
-
-        /* Configuração da Logo */
-        .logo-site {
-            max-width: 150px; /* Controla o tamanho da logo */
-            height: auto;
-            margin-bottom: 1.5rem; /* Dá um espaço entre a logo e o título */
-            border-radius: 15%; /* Opcional: Deixa a imagem arredondada */
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Dá um sombreado elegante */
+        
+        .footer-info {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+            color: #aaa;
         }
     </style>
 </head>
 <body>
 
-<header>
+    <header>
         <!-- AQUI ENTRA A LOGO -->
-        <img src="midia/logo.png" alt="Logo Ricardo Engenharia" class="logo-site">
+        <img src="midia/logo.png" alt="Logo Ideal Construções" class="logo-site">
         
-        <h1>Ricardo Engenheiro</h1>
-        <h2>Serviços de Engenharia, Demolição e Limpeza de Terrenos</h2>
-        <p>Preparo o seu terreno para a próxima obra com segurança, maquinário especializado e descarte regularizado. Atendimento rápido e eficiente.</p>
+        <h1>Ideal Construções</h1>
+        <h2>Prestação & Serviços</h2>
+        <p>Desenvolvemos soluções completas em instalações elétricas e sistemas preventivos contra incêndio. Protegemos vidas, patrimônios e garantimos a conformidade técnica rigorosa da sua operação com as normas da ABNT.</p>
         
-        <!-- Botão WhatsApp -->
-        <a href="https://wa.me/5585981680463?text=Olá,%20vi%20o%20anúncio%20e%20gostaria%20de%20um%20orçamento%20para%20demolição" class="btn btn-whatsapp" target="_blank">
-            Solicitar Orçamento no WhatsApp
+        <!-- Botão WhatsApp com número atualizado -->
+        <a href="https://wa.me/5585997437534?text=Olá,%20acessei%20o%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20técnica" class="btn btn-whatsapp" target="_blank">
+            Solicite uma Visita Técnica
         </a>
     </header>
 
     <section class="portfolio">
-        <h2>Meu Trabalho na Prática</h2>
+        <h2>Nossas Soluções em Segurança e Eficiência</h2>
         <div class="grid">
-            <!-- Substitua estas divs por tags <video> ou <img> quando tiver o material -->
-            <div class="video-placeholder">
-                [Vídeo/Imagem 1: Estrutura sendo demolida]
+            
+            <div class="service-card">
+                <h3>Instalações Elétricas</h3>
+                <ul>
+                    <li>Elétrica predial, comercial e industrial</li>
+                    <li>Montagem de quadros elétricos</li>
+                    <li>Infraestrutura elétrica completa</li>
+                    <li>Iluminação interna e externa</li>
+                    <li>Manutenção preventiva e corretiva</li>
+                </ul>
             </div>
-            <div class="video-placeholder">
-                [Vídeo/Imagem 2: Remoção de entulho com trator]
+
+            <div class="service-card">
+                <h3>Prevenção a Incêndio</h3>
+                <ul>
+                    <li>Sistema de hidrantes e rede de sprinklers</li>
+                    <li>Instalação de bombas de incêndio</li>
+                    <li>Alarme e detecção de fumaça</li>
+                    <li>Sinalização e iluminação de emergência</li>
+                    <li>Acompanhamento técnico especializado</li>
+                </ul>
             </div>
-            <div class="video-placeholder">
-                [Vídeo/Imagem 3: Terreno limpo - Antes e Depois]
+
+            <div class="service-card">
+                <h3>Conformidade e Proteção</h3>
+                <ul>
+                    <li>Sistema de Proteção contra Descargas Atmosféricas (SPDA)</li>
+                    <li>Sistemas de aterramento rigorosos</li>
+                    <li>Execução conforme normas ABNT e Corpo de Bombeiros</li>
+                    <li>Atendimento personalizado e suporte técnico</li>
+                </ul>
             </div>
+
         </div>
     </section>
 
     <footer>
-        <h2>Fale com o Engenheiro Responsável</h2>
-        <p style="margin-bottom: 1.5rem;">Tire suas dúvidas ou agende uma visita técnica.</p>
+        <h2>Protegendo Vidas e Patrimônios</h2>
+        <p style="margin-bottom: 1.5rem;">Fale com nossa equipe técnica especializada.</p>
         
-        <a href="https://wa.me/5585981680463?text=Olá,%20vi%20o%20site%20e%20quero%20falar%20com%20o%20engenheiro" class="btn btn-whatsapp" target="_blank">
+        <a href="https://wa.me/5585997437534?text=Olá,%20gostaria%20de%20falar%20com%20um%20especialista" class="btn btn-whatsapp" target="_blank">
             Chamar no WhatsApp
         </a>
-        <!-- Substitua seunome_engenharia pelo @ correto -->
         <a href="https://instagram.com/gustavoadw" class="btn btn-insta" target="_blank">
             Ver mais no Instagram
         </a>
+
+        <div class="footer-info">
+            <p>idealconstrucoesps@gmail.com</p>
+            <p>CNPJ: 55.068.627/0001-76</p>
+        </div>
     </footer>
 
-    <!-- Script opcional para rastrear os cliques no WhatsApp (Dispara o evento pro Pixel/Analytics) -->
+    <!-- Script para rastrear os cliques no WhatsApp -->
     <script>
         const whatsappButtons = document.querySelectorAll('.btn-whatsapp');
         whatsappButtons.forEach(button => {
             button.addEventListener('click', () => {
                 console.log('Clique no WhatsApp registrado!');
-                // Aqui você vai inserir o código de conversão da Meta:
                 // fbq('track', 'Lead');
-                // E do Google Ads:
                 // gtag('event', 'conversion', {'send_to': 'AW-SEUID/SUACONVERSAO'});
             });
         });
