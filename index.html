@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-width=1.0">
-    <title>Ideal Construções | Elétrica e Prevenção a Incêndio</title>
+    <title>Ideal Construções | Elétrica, Incêndio e Demolição</title>
     <link rel="icon" href="./midia/logo.png?v=3" type="image/png">
     
     <!-- ========================================== -->
@@ -61,7 +61,7 @@
 
         header p {
             font-size: 1.1rem;
-            max-width: 700px;
+            max-width: 800px;
             margin: 0 auto 2rem auto;
             color: #ccc;
         }
@@ -103,7 +103,7 @@
         .portfolio {
             padding: 4rem 1rem;
             text-align: center;
-            max-width: 1100px;
+            max-width: 1200px; /* Alargado levemente para acomodar 4 cards com folga */
             margin: 0 auto;
         }
 
@@ -115,11 +115,11 @@
 
         .grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 1.5rem;
         }
 
-        /* Novo estilo para os cartões de serviço baseados nos PDFs */
+        /* Novo estilo para os cartões de serviço */
         .service-card {
             background-color: var(--card-bg);
             padding: 2rem;
@@ -145,12 +145,14 @@
             position: relative;
         }
 
+        /* Marcador universal para os serviços */
         .service-card ul li::before {
-            content: "⚡";
+            content: "✓"; 
             position: absolute;
             left: 0;
             color: var(--primary-color);
-            font-size: 0.9rem;
+            font-weight: bold;
+            font-size: 1rem;
         }
 
         /* Configuração da Logo */
@@ -188,7 +190,7 @@
         
         <h1>Ideal Construções</h1>
         <h2>Prestação & Serviços</h2>
-        <p>Desenvolvemos soluções completas em instalações elétricas e sistemas preventivos contra incêndio. Protegemos vidas, patrimônios e garantimos a conformidade técnica rigorosa da sua operação com as normas da ABNT.</p>
+        <p>Desenvolvemos soluções completas em instalações elétricas, sistemas preventivos contra incêndio e serviços especializados de demolição e limpeza de terrenos. Protegemos vidas, patrimônios e preparamos sua obra com segurança e rigor técnico.</p>
         
         <!-- Botão WhatsApp com número atualizado -->
         <a href="https://wa.me/5585997437534?text=Olá,%20acessei%20o%20site%20e%20gostaria%20de%20agendar%20uma%20visita%20técnica" class="btn btn-whatsapp" target="_blank">
@@ -197,7 +199,7 @@
     </header>
 
     <section class="portfolio">
-        <h2>Nossas Soluções em Segurança e Eficiência</h2>
+        <h2>Nossas Soluções em Engenharia e Segurança</h2>
         <div class="grid">
             
             <div class="service-card">
@@ -223,6 +225,17 @@
             </div>
 
             <div class="service-card">
+                <h3>Demolição e Preparação</h3>
+                <ul>
+                    <li>Demolição segura de estruturas</li>
+                    <li>Limpeza completa de terrenos</li>
+                    <li>Remoção e descarte regularizado de entulho</li>
+                    <li>Uso de maquinário pesado especializado</li>
+                    <li>Preparação e nivelamento para novas obras</li>
+                </ul>
+            </div>
+
+            <div class="service-card">
                 <h3>Conformidade e Proteção</h3>
                 <ul>
                     <li>Sistema de Proteção contra Descargas Atmosféricas (SPDA)</li>
@@ -236,8 +249,8 @@
     </section>
 
     <footer>
-        <h2>Protegendo Vidas e Patrimônios</h2>
-        <p style="margin-bottom: 1.5rem;">Fale com nossa equipe técnica especializada.</p>
+        <h2>Estrutura e Segurança em Mãos Especializadas</h2>
+        <p style="margin-bottom: 1.5rem;">Fale com nossa equipe e garanta a eficiência do seu projeto.</p>
         
         <a href="https://wa.me/5585997437534?text=Olá,%20gostaria%20de%20falar%20com%20um%20especialista" class="btn btn-whatsapp" target="_blank">
             Chamar no WhatsApp
@@ -249,6 +262,7 @@
         <div class="footer-info">
             <p>idealconstrucoesps@gmail.com</p>
             <p>CNPJ: 55.068.627/0001-76</p>
+            <p>Atendimento em Fortaleza e Região</p>
         </div>
     </footer>
 
